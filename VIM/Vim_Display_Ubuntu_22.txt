@@ -1,0 +1,37 @@
+The Short Answer
+In vim, display or showing line numbers is synonymous with setting line numbers:
+
+set number or set nu will show or turn on line numbers
+set nonumber or set nonu will hide the line numbers
+set relativenumber or set rnu will show line numbers relative to the cursor position
+set nonumber norelativenumber or set nornu will hide line numbers
+set number! will toggle the line numbers on/off
+set relativenumber! will toggle the relative line numbers on/off
+Showing Absolute Line Numbers
+For long files, it can be easy to lose track of the code in question, but having line numbers can be a useful point of reference. 
+
+Use the command, set number to show the absolute line numbers in the editor. 
+
+‍
+
+
+
+‍
+
+Showing Relative Line Numbers
+It’s possible to also view line numbers relative to the current line where the cursor is located. This is used less commonly than absolute line numbers but can be helpful when copy and pasting a code block.
+
+Use the command, set relativenumber to show the relative line numbers in the editor. 
+
+
+Toggling Line Numbers
+To toggle between showing and hiding line numbers, add a bang ! to the end of the command.
+
+set number! for absolute line numbers
+set relativenumber! for relative line numbers
+Showing Line Numbers by Default
+Edit the ~/.vimrc file by using this command: vim ~/.vimrc
+
+Then add set number to the file and save and quit. Then any new vi editors will show absolute line numbers by default.
+
+‍
